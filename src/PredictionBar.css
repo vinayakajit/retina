@@ -1,0 +1,50 @@
+.prediction-container {
+    width: 100%;
+    max-width: 600px; /* Limit width for better aesthetics */
+    margin: 20px auto; /* Center container */
+    text-align: left; /* Align text to the left */
+}
+
+.prediction-bar {
+    margin: 15px 0; /* Space between prediction bars */
+    display: flex; /* Use flexbox to align children */
+    align-items: center; /* Center items vertically */
+}
+
+.label {
+    font-weight: bold;
+    color: #2c3e50; /* Darker text color */
+    font-size: 1.2rem; /* Increased font size */
+    flex: 1; /* Allow label to take up available space */
+    text-align: center; /* Center the label text */
+}
+
+.bar-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for contrast */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure inner bars don't overflow */
+    height: 40px; /* Height of the bar */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    flex: 2; /* Allow bar container to take up more space */
+    margin-left: 10px; /* Space between label and bar */
+}
+
+.bar {
+    height: 100%; /* Set height of the bar */
+    background-color: white; /* Set bar background to white */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: relative; /* Positioning for the text */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Percentage text style */
+.percentage {
+    font-weight: bold; /* Make text bold */
+    color: black; /* Set text color to black */
+    position: absolute; /* Absolute positioning for centering */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Center text */
+}
